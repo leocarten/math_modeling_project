@@ -6,8 +6,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/themes/prism.min.css">
     <script defer src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/prism.min.js"></script>
     <script defer src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/components/prism-python.min.js"></script>
-    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -46,10 +47,11 @@
 <!-- Heading -->
 <section class="container">
     <div class="mx-auto">
-        <h2 style="align-items: center !important;justify-content: center !important;display: flex !important;" class="mt-3">Should I buy Bitcoin or Real Estate?</h2>
+        <h1 style="align-items: center !important;justify-content: center !important;display: flex !important;" class="mt-4">Should I buy Bitcoin or Real Estate?</h1>
+        <h4 style="align-items: center !important;justify-content: center !important;display: flex !important;" class="mt-0">Coming to a conclusion using Mathematical Modeling</h4>
     </div>
-    <p style="align-items: center !important;justify-content: center !important;display: flex !important; color:#696b6d !important" class="mt-0 mb-0">By: Leo Carten - Updated: 11.29.30</p>
-    <p style="align-items: center !important;justify-content: center !important;display: flex !important; color:#696b6d !important" class="mt-0 ">Estimated read time: 8 minutes</p>
+    <p style="align-items: center !important;justify-content: center !important;display: flex !important; color:#7b7c7c !important" class="mt-0 mb-0"><i class="fa fa-edit" style="color: black; margin-right: 3px; font-size: 18px;"></i> By: Leo Carten - Updated: 11.29.30</p>
+    <p style="align-items: center !important;justify-content: center !important;display: flex !important; color:#7b7c7c !important" class="mt-0 "><i class="fa fa-book" style="color: black; margin-right: 3px; font-size: 18px;"></i>Estimated read time: 8 minutes</p>
 </section>
 
 
@@ -74,11 +76,12 @@
         </ol>
     </div>
 </section>
+<hr style="margin-top: 30px !important;">
 
 
 <section class="container" id="bitcoin-section">
-    <h2>What is Bitcoin? <span style="font-size: 20px; color: #696b6d">True peer to peer transactions</span></h2>
-    <p style="margin-left: 15px !important; margin-right: 15px !important;">The classic definition is as follows: Bitcoin is a decentralized digital currency that enables peer-to-peer transactions without the need for a central authority or government. It operates on a technology called blockchain, a distributed ledger that records all transactions across a network of computers.</p>
+    <h2>What is Bitcoin? <span style="font-size: 20px; color: #7b7c7c">True peer to peer transactions</span></h2>
+    <p style="margin-left: 15px !important; margin-right: 15px !important;">Bitcoin is a decentralized digital currency that enables peer-to-peer transactions without the need for a central authority or government. It operates on a technology called blockchain, a distributed ledger that records all transactions across a network of computers.</p>
     <p style="margin-left: 15px !important; margin-right: 15px !important;">In simlper terms: When John swipes his visa vard to buy groceries, a bank is used as third party to ensure that:</p>
     <ul>
         <li style="margin-left: 10px !important; margin-right: 10px !important;">John has enough money in his account to make the purchase.</li>
@@ -91,49 +94,42 @@
         <li style="margin-left: 10px !important; margin-right: 10px !important;">Transactions are verified by a distributed network of computers (nodes) rather than a single entity.</li>
         <li style="margin-left: 10px !important; margin-right: 10px !important;">The information about the transaction is securely recorded on a blockchain, providing transparency.</li>
     </ul>
-    <p style="margin-left: 15px !important; margin-right: 15px !important;">At the end of the day, Bitcoin allows people like John to make digital transactions directly with each other, without the need for intermediaries, in a secure and transparent way. Whether you think having a distributed network to control money is a good, or bad thing, is up to you...</p>
+    <p style="margin-left: 15px !important; margin-right: 15px !important;">At the end of the day, Bitcoin allows people like John to make digital transactions without the need for intermediaries, in a secure and transparent way. Whether you think having a distributed network to control money is a good or bad thing is up to you...</p>
 
 </section>
 
 <hr style="margin-top: 30px !important;">
 
 <section class="container" id="blockchain">
-    <h2>What is a blockchain? <span style="font-size: 20px; color: #696b6d">A public ledger everyone can see</span></h2>
+    <h2>What is a blockchain? <span style="font-size: 20px; color: #7b7c7c">A public ledger everyone can see</span></h2>
     <p style="margin-left: 15px !important; margin-right: 15px !important;">A blockchain is a collection of blocks that are chained together. Each block contains a maximum amount of transactions, in the context of Bitcoin, the maximum blocksize is 1MB, or about 2,000 transactions. Every 10 minutes or so, a new block is published onto the blockchain. Each block is published via miners. </p>
-    <p style="margin-left: 25px !important; margin-right: 25px !important; "><span style="color: red; font-weight: bold;">DID YOU KNOW</span><br><span style="font-style: italic;">VISA can perform ~20,000 transactions per second, while Bitcoin can only perform about 6 transactions per second. This is a fundamental error with how the blockchain operates, since each blocksize has a maximum size of 1MB.</span></p>
-    <p style="margin-left: 15px !important; margin-right: 15px !important;">Miners pay an integral part of maintaining blockchains. Miners need to run intense computer programs to generate hashes. Bitcoin uses adjustment algorithms that can re-correct [in real time] how many digits of a hash a miner needs to guess. A hash is a function <span class="standout">f(x)=n</span>, such that the input string <span class="standout">x</span> will always be mapped to the output string <span class="standout">n</span>. Hashes have a property such that generating a hash is simple, but reverse engineering a hash [trying to derive the value of <span class="standout">x</span> from <span class="standout">n</span>] is nearly computationally impossible.</p>
+    <p style="margin-left: 25px !important; margin-right: 25px !important; "><span style="color: blue; font-weight: bold;"><i class="fa fa-bolt" style="font-size: px; color: rgb(31, 67, 226);"></i> DID YOU KNOW</span><br><span style="font-style: italic;">VISA can perform ~20,000 transactions per second, while Bitcoin can only perform about 6 transactions per second. This is a fundamental error with how the blockchain operates, since each blocksize has a maximum size of 1MB.</span></p>
+    <p style="margin-left: 15px !important; margin-right: 15px !important;">At the end of the day, a blockchain is just a giant ledger that contains every transactiion that has ever occured. Earlier I stated how in a centralized banking system, transactions are stored in a database. You can think of a blockchain as a distributed database that everyone has access to. To build on the example above, imagine <span class="standout">anyone</span> wanted to view John's transaction. They could. They would see that John spent $17 at 3:30pm at Market Basket. You can see an example of a Bitcoin block <a href="https://www.blockchain.com/explorer/blocks/btc/819028" target="_blank">here</a>. If you visit this page, can can see the time the block was mined on, the amount of Bitcoin minted [brought into circulation], the total reward to the miner, etc. If you happen to scroll down, you can also view every transaction that occured inside of that block.</p>
     <p style="margin-left: 15px !important; margin-right: 15px !important;"></p>
 </section>
+<hr style="margin-top: 30px !important;">
 
 
 <section class="container" id="miners">
-    <h2>What role do Bitcoin miners play? <span style="font-size: 20px; color: #696b6d">Is it luck or skill?</span> </h2>
+    <h2>What role do Bitcoin miners play? <span style="font-size: 20px; color: #7b7c7c">Is it luck or skill?</span> </h2>
+    <p style="margin-left: 15px !important; margin-right: 15px !important;">Miners pay an integral part of maintaining blockchains. Miners need to run intense computer programs to generate hashes. Bitcoin uses adjustment algorithms that can re-correct [in real time] how many digits of a hash a miner needs to guess. A hash is a function <span class="standout">f(x)=n</span>, such that the input string <span class="standout">x</span> will always be mapped to the output string <span class="standout">n</span>. Hashes have a property such that generating a hash is simple, but reverse engineering a hash [trying to derive the value of <span class="standout">x</span> from <span class="standout">n</span>] is nearly computationally impossible.</p>
+
     <p style="margin-left: 15px !important; margin-right: 15px !important;">Imagine you are at a casino and someone hands you a dice, but not a normal dice. Instead, this dice has 10,000 sides. The rules of the game are simple: Role the dice and land on a number less than 100 to win. Statistically speaking, the odds of this are very low. But, this is exactly what Bitcoin mining is. See, Bitcoin uses a <span class='standout'>Proof of Work</span> (PoW) mechanism to create blocks. The proof in this case is how many attempts they took to guess a random string to try to generate a matching hash. Let's go back to the casino for a moment. Let's say Ricky finally roled a value less than 100 - so Ricky wins. The work that Ricky had to put into winning [rolling the dice many, many times] is similiar to how the Bitcoin miner had to consume a lot of resources [such as electricity] to generate a maching hash.</p>
-    <p style="margin-left: 25px !important; margin-right: 25px !important; "><span style="color: red; font-weight: bold;">DID YOU KNOW</span><br><span style="font-style: italic;">1 bitcoin transaction takes 1,449 kWh to complete, which is equivalent of approximately 50 days of power for the average US household. </span></p>
+    <p style="margin-left: 25px !important; margin-right: 25px !important; "><span style="color: blue; font-weight: bold;"><i class="fa fa-bolt" style="font-size: px; color: rgb(31, 67, 226);"></i> DID YOU KNOW</span><br><span style="font-style: italic;">1 bitcoin transaction takes 1,449 kWh to complete, which is equivalent of approximately 50 days of power for the average US household. </span></p>
     <p style="margin-left: 15px !important; margin-right: 15px !important;">Remember earlier how I said Bitcoin uses a real time self correction algorithm? It's going to all come full circle in a moment. When we are at the casino, and there are only 3 people playing the dice game, we need to roll less than a 100 on a 10,000 sided dice. This ensure there will be a lot of work put into winning the prize. Now, let's imagine there are 20,000 people playing this game. The winner is much more likely to have to put in <span class='standout'>less</span> work, right? Bitcoin is like this too - the more miners, the quicker blocks can be generated. Bitcoin can algorithmically decrease the winning value, i.e. changing the winning value of less than 100 to less than 3...</p>
     <p style="margin-left: 15px !important; margin-right: 15px !important;">Once someone finally rolls a value less than 3, all 20,000 players can look down and either agree, or disagree that the value is less than 3. Similiarlly, all nodes in the distributed network can agree that the correct hash was generated. Once this is done, the transaction is stored inside of that block on the blockchain, <span class='standout'>forever</span>, and a new block is displayed for miners to do the same thing all over again.</p>
-    <p style="margin-left: 15px !important; margin-right: 15px !important;">Miners are incentivised to play because of the rewards that come with generating the correct hash. The initial reward for mining a Bitcoin block was 50 Bitcoin. This value is halved every 210,000 blocks that get published, and on average, publishing 210,000 blocks takes approximately 4 years. So, from the initial creation of Bitcoin in 2009 to 2013, miners we rewarded 50 Bitcoin per block. From 2013 to 2017, miners were rewarded 25 Bitcoin per block, then 12.5 per block, then 6.25, etc.</p>
-    <p style="margin-left: 25px !important; margin-right: 25px !important; "><span style="color: red; font-weight: bold;">DID YOU KNOW</span><br><span style="font-style: italic;">If we you were lucky enough to mine a singular Bitcoin block in 2009, the USD value of your reward today would be $1,850,000.</span></p>
+    <p style="margin-left: 15px !important; margin-right: 15px !important;">Miners are incentivised to play because of the rewards that come with generating the correct hash. The initial reward for mining a Bitcoin block was 50 Bitcoin. This value is halved every 210,000 blocks that get published, and on average, publishing 210,000 blocks takes approximately 4 years. So, from the initial creation of Bitcoin in 2009 to 2013, miners we rewarded 50 Bitcoin per block. From 2013 to 2017, miners were rewarded 25 Bitcoin per block, then 12.5 per block from 2017 to 2021, then 6.25 from 2021 to 2025, etc. This halving is what makes Bitcoin deflationary, as there will be a finite amount of Bitcoin ever in circulation.</p>
+    <p style="margin-left: 25px !important; margin-right: 25px !important; "><span style="color: blue; font-weight: bold;"><i class="fa fa-bolt" style="font-size: px; color: rgb(31, 67, 226);"></i> DID YOU KNOW</span><br><span style="font-style: italic;">If we you were lucky enough to mine a singular Bitcoin block in 2009, the USD value of your reward today would be $1,850,000.</span></p>
 </section>
 
 <hr style="margin-top: 30px !important;">
 
 <section class="container" id="price-models">
-    <h2>Leo's Bitcoin Price Models <span style="font-size: 20px; color: #696b6d">How much can one of these things be worth?</span> </h2>
-    <svg xmlns="http://www.w3.org/2000/svg" class="d-none">
-        <symbol id="check-circle-fill" viewBox="0 0 16 16">
-          <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/>
-        </symbol>
-        <symbol id="info-fill" viewBox="0 0 16 16">
-          <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm.93-9.412-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2z"/>
-        </symbol>
-        <symbol id="exclamation-triangle-fill" viewBox="0 0 16 16">
-          <path d="M8.982 1.566a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767L8.982 1.566zM8 5c.535 0 .954.462.9.995l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 5.995A.905.905 0 0 1 8 5zm.002 6a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
-        </symbol>
-      </svg>
+    <h2>Leo's Bitcoin Price Models <span style="font-size: 20px; color: #7b7c7c">How much can one of these things be worth?</span> </h2>
+
       
-      <div class="alert alert-primary d-flex align-items-center" role="alert">
-        <svg class="bi flex-shrink-0 me-2" role="img" aria-label="Info:" width="16px" height="16px"><use xlink:href="#info-fill"/></svg>
+      <div class="alert alert-primary d-flex align-items-center" role="alert" style="background-color: rgb(215, 215, 215); color:black;border-color: black;">
+        <i class="fa fa-info-circle" style="font-size: 18px; margin-right: 3px;"></i>        
         <div>
             All of the following data was generated from <a href="https://finance.yahoo.com/quote/BTC-USD/history?p=BTC-USD" target="_blank">Yahoo Finance</a> by parsing their free CSV files for Historic Price Data.
         </div>
@@ -155,8 +151,8 @@
             <br>
             You can derive this with the Python code:<br>
             <div class="code-container">
-                <pre>
-                    <code class="language-python">
+                <pre >
+                    <code class="language-python" >
 def getTotalCirculation():
     initial_year = 2009
     reward_amount = 50
@@ -173,21 +169,22 @@ getTotalCirculation()
             </div>
         The code above will spit out that by year year 2141, there will already by 20,999,999.999 Bitcoin in circulation, and will never exceed 21,000,000.<br>
         The stock to flow can be generated each year by dividing the total in circulation by the amount of Bitcoin that will come into circulation that year.<br>
-        Doing some basic Math, we can visualize the basic relationship between stock and flow:<br>
+        Using the data from the Yahoo CSV, we can visualize the basic relationship between stock and flow:<br>
         <img src="images/Stock to Flow Relation.png"><br>
         Further, we can also generate an estimated price using the stock to flow relationship via this formula created by me: <span class="standout">price=((stock/flow)^3)*0.4</span>
         <img src="images/S2F Price.png">
         <br>
         Please note, in the above, I also implemented a pre-processing smoothing algorithm to smooth the jumps between pricing data to ensure higher accuracy. Below, I show <span class="standout">Smoothing vs. No Smoothing vs. True Price</span>:
+        <br>
         <img src="images/Bitcoin Yearly Averages compared to my models.png">
         <br>
-        As you can see, my model is actually pretty accurate until this year. Both the smoothed, and un-smoothed price generated prices near $77,000 even though the current price hovers around $37,000.
+        <p>As you can see, my model is actually pretty accurate until this year. Both the smoothed, and un-smoothed price generated prices near $77,000 even though the current price hovers around $37,000. My stock to flow model estimates Bitcoin to be priced at <span class="standout">$680,000</span> sometime in 2025 and 2026. Personally, I think the value is on the high side. Below, I use Logramithic Regression to come to, what I believe, is the most accurate price assessment of Bitcoin.</p>
         </li>
 
         <li style="margin-left: 10px !important; margin-right: 10px !important;" id="logarithmic-regression-model">
             <span style="font-weight: bold; font-size: 22px;">Logarithmic Regression</span><br>
             <p>Logarithmic Regression is just like linear regression except you use a Logarithmic function to fit your data...</p>
-            <p>1. Below I describe how I was able to fit a Logarithmic curve on my dataset:</p>
+            <p>Below I describe how I was able to fit a Logarithmic curve on my dataset:</p>
             <div class="code-container">
                 <pre>
                     <code class="language-python">
@@ -298,9 +295,10 @@ with open("predicted.csv", 'a') as fd: # open the new CSV
                 </pre>
             </div>
             <p>And at last, we create create a graph that predicts the new price of Bitcoin to 2030! This is shown below:</p>
-            <img src="images/btc_labled_prices.png" width="600"><br>
+            <img src="images/Log_reg_extended.png" width="600"><br>
             <p class="mt-2">Below is an image of just the Logramithic Regression for a cleaner look:</p>
             <img src="images/predicted_log_regression.png"><br>
+            <p class="mt-2">The extrapolated data above suggests that sometime between the years 2026 and 2028, Bitcoin could reach a maximum value of <span class="standout">$230,000</span>, but could also reach a minimum value of <span class="standout">$35,000</span>.</p>
         </li>
         <li style="margin-left: 10px !important; margin-right: 10px !important;" class="mt-4">
             <span style="font-weight: bold; font-size: 20px;">Other existing models that exist that I did not explore</span><br>
@@ -313,14 +311,14 @@ with open("predicted.csv", 'a') as fd: # open the new CSV
 <hr style="margin-top: 30px !important;">
 
 <section class="container" id="model-limitations">
-    <h2>Bitcoin Price Model Limitations <span style="font-size: 20px; color: #696b6d">There are no good models, only some are useful</span></h2>
+    <h2>Bitcoin Price Model Limitations <span style="font-size: 20px; color: #7b7c7c">There are no good models, only some are useful</span></h2>
     <p>There are <span class="standout">a lot</span> of variables that go into creating a model like this. A lot of variables translates to limitations in models accuracy. I will list a few below...</p>
     <p>Examples of Model Limitations may happens because:</p>
     <ul>
         <li style="margin-left: 10px !important; margin-right: 10px !important;">
             <span style="font-weight: bold; font-size: 20px;">Black Swan Event</span><br>
             <p>A Black Swan event is when some unforseeable [random] event occurs that no model can predict. For example, in May of 2021 Tesla announced that they would no longer be accepting Bitcoin as a form of payment. This occured because the Tesla stock was dropping because they were being hypocritcal in the eyes of investors for promoting energy efficent technology, but allowing payment in Bitcoin, which is very in-effecient as we discussed earlier. Further, in 2021 China banned Bitcoin mining. 50% of the world&apos;s bitcoin mining power was generated in China before the crackdown, the global bitcoin economy felt the pain of China&apos;s bitcoin mining ban. </p>
-            <p style="margin-left: 25px !important; margin-right: 25px !important; "><span style="color: red; font-weight: bold;">DID YOU KNOW</span><br><span style="font-style: italic;">The 2 events listed above caused the price of Bitcoin to plummit about $10,000.</span></p>
+            <p style="margin-left: 25px !important; margin-right: 25px !important; "><span style="color: blue; font-weight: bold;"><i class="fa fa-bolt" style="font-size: px; color: rgb(31, 67, 226);"></i> DID YOU KNOW</span><br><span style="font-style: italic;">The 2 events listed above caused the price of Bitcoin to plummit about $10,000.</span></p>
 
         </li>
         <li style="margin-left: 10px !important; margin-right: 10px !important;">
