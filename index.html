@@ -51,7 +51,7 @@
         <h4 style="align-items: center !important;justify-content: center !important;display: flex !important;" class="mt-0">Coming to a conclusion using Mathematical Modeling</h4>
     </div>
     <p style="align-items: center !important;justify-content: center !important;display: flex !important; color:#7b7c7c !important" class="mt-0 mb-0"><i class="fa fa-edit" style="color: black; margin-right: 3px; font-size: 18px;"></i> By: Leo Carten - Updated: 11.29.30</p>
-    <p style="align-items: center !important;justify-content: center !important;display: flex !important; color:#7b7c7c !important" class="mt-0 "><i class="fa fa-book" style="color: black; margin-right: 3px; font-size: 18px;"></i>Estimated read time: 8 minutes</p>
+    <p style="align-items: center !important;justify-content: center !important;display: flex !important; color:#7b7c7c !important" class="mt-0 "><i class="fa fa-book" style="color: black; margin-right: 3px; font-size: 18px;"></i>Estimated read time: 15 minutes</p>
 </section>
 
 
@@ -59,6 +59,7 @@
     <div class="toc">
         <h5>Table of contents</h5>
         <ol>
+            <h6>Bitcoin</h6>
             <li><a href="#bitcoin-section">What is Bitcoin?</a></li>
             <li><a href="#blockchain">What is a Blockchain?</a></li>
             <li><a href="#miners">What role do Bitcoin miners play?</a></li>
@@ -70,7 +71,15 @@
                 </ul>
             </li>
             <li><a href="#model-limitations">Bitcoin Price Model Limitations</a></li>
-            <li><a href="#real-estate">Real Estate</a></li>
+            <h6 class="mt-4">Real Estate</h6>
+            <li><a href="#real-estate">What is Real Estate</a></li>
+            <li><a href="#real-estate-types">The different types of Real Estate</a></li>
+            <li><a href="#real-estate-factors">Price factors of Real Estate</a></li>
+            <li><a href="#real-estate-model">Leo's Real Estate Price models </a></li>
+            <ul>
+                <li><a href="#re-time-model">Time Model</a></li>
+                <li><a href="#re-lin-reg">Linear Regression Model</a></li>
+            </ul>
             <li><a href="#conclusions">Conclusions</a></li>
             <li><a href="#sources">Sources</a></li>
         </ol>
@@ -326,6 +335,10 @@ with open("predicted.csv", 'a') as fd: # open the new CSV
             <p>Since miners use very expensive computational devices to mine Bitcoin, the price of the hardware required to mine blocks can play a role. If the technology becomes cheaper, more people will start mining, and if the price rises, less people will want to begin mining. Luckity, the Bitcoin network can somewhat adjust for this price flucation per the real time difficulty algorithm discussed earlier.</p>
             <p></p>
         </li>
+        <li style="margin-left: 10px !important; margin-right: 10px !important;">
+            <span style="font-weight: bold; font-size: 20px;">Others</span><br>
+            <p>Media hype, government regulations, electricity prices, oil prices, where in the Bitcoin halving cycle we are.</p>
+        </li>
     </ul>
 </section>
 
@@ -333,8 +346,164 @@ with open("predicted.csv", 'a') as fd: # open the new CSV
 
 
 <section class="container" id="real-estate">
-    <h2>Real Estate</h2>
-    <p>I still have yet to do this part.</p>
+    <h2>What is Real Estate? <span style="font-size: 20px; color: #7b7c7c">Land vs. Real Estate</span></h2>
+    <p>Real Estate in any land or property that has man-made features, or features that are permanently attached to it. Some real estate is more expensive than others, for example, waterfront properties have historically been more expensive to buy than traditional houses. </p>
+    <p>The terms land and real estate  are often used interchangeably, but this is not correct...</p>
+    <p><span class="standout">Land </span>is the physical earth that something is built on. There is a finite amount of land. Land includes the trees, rocks, rivers, oceans, streams, and anything else that can naturally consume space. Different types of land are found in various spots of the world. For example, a desert, where the primary component of the land is sand, may be harder to build and maintain human environments compared to a place which is comprised of trees, soil, and water.</p>
+    <p><span class="standout">Real Estate </span>is the man-made changes that have been added to the land which bring value. For example, septic systems, apartments, houses, and water management systems are all changes that can be done to land to generate value. We call these changes improvements. Improvements to land are expensive, because you need to pay for the material, labor, etc. </p>
+    <p>At the end of the day, real estate and the man-made changes to a section of land that can generate value, of which people can invest in.  </p>
+    <p style="margin-left: 25px !important; margin-right: 25px !important; "><span style="color: red; font-weight: bold;"><i class="fa fa-bolt" style="font-size: px; color: rgb(226, 31, 31);"></i> DID YOU KNOW</span><br><span style="font-style: italic;">McDonalds is considered a Real Estate company because they own the underlying land that a franchisee can rent out.</span></p>
+</section>
+
+<hr style="margin-top: 30px !important;">
+
+<section class="container" id="real-estate-types">
+    <h2>The different types of Real Estate <span style="font-size: 20px; color: #7b7c7c">Residential vs. Commercial vs. Industrial</span></h2>
+    <p>There are 3 main categories of Real Estate, which are Residential, Commercial, and Industrial...</p>
+    <p><span class="standout">Residential Real Estate </span>is the name most commonly associated with Real Estate - this is the Real Estate people live in. This can include houses, apartments, condos, town houses, etc. Residential Real Estate can be broken down into subcategories, which depend on the size of the property/housing unit. For example, there are single family homes, multi-family homes, and other unique type of living arrangements. Often times, the land or geographical area can incentive certain age ranges of people, which can translate to the types of homes. For example, mountainous and countryside properties often attract older people, or people with families. Suburban neighborhoods usually attract people who want, or people who have a family. And apartments / condos can attract younger, single people. </p>
+    <p><span class="standout">Commercial Real Estate </span>is real estate needed by companies to carry out their business, and differs from Residential real estate because Commercial Real Estate investors assume no one will be living in their property [except for Commercial Real Estate like Hotels], rather only carrying out operations of business. For example, Commercial real estate includes shopping malls, grocery stores, parking lots, hospitals, college campuses, etc. </p>
+    <p><span class="standout">Industrial Real Estate </span>is real estate that is used for factories, manufacturing, production, research, construction, transportation, data centers, etc. For example, this website is currently being served by a server located somewhere in San Francisco, California. This server is maintained by Digital Ocean in a giant data center. This Real Estate, AKA, the data center hosting this website, is considered to be Industrial Real Estate. Other examples may include yogurt factories, Amazon warehouses, Industrial Building, etc. </p>
+</section>
+
+<hr style="margin-top: 30px !important;">
+
+<section class="container" id="real-estate-factors">
+    <h2>Price factors of Real Estate <span style="font-size: 20px; color: #7b7c7c">Internal vs. External</span></h2>
+    <p>There are 3 main categories of Real Estate, which are Residential, Commercial, and Industrial...</p>
+    <p>There are so many different factors that can determine the current value of a piece of Real Estate. I am going to break these into 2 main categories, internal and external factors. </p>
+    <p><span class="standout">Internal factors </span>can include the age of the property, the condition of the property, the conditions of the improvements around the real estate [is the property operating on a septic system that was built 100 years ago?], the size of the property. </p>
+    <p><span class="standout">External factors </span>include things outside of the property, such as the land surrounding the property [i.e. neighborhoods], crime rates, the price of labor, the price of electricity, the price of materials, the current state of the US economy, the current state of the US housing market, human population growth.</p>
+    <p>This list is just scratching the surface, there are many more, but these are the main factors I thought were important noting.</p>
+</section>
+
+<hr style="margin-top: 30px !important;">
+
+<section class="container" id="real-estate-model">
+    <h2>Leo's Real Estate Price models <span style="font-size: 20px; color: #7b7c7c">Putting a monetary value to Earth's crust</span></h2>
+    <div class="alert alert-primary d-flex align-items-center" role="alert" style="background-color: rgb(215, 215, 215); color:black;border-color: black;">
+        <i class="fa fa-info-circle" style="font-size: 18px; margin-right: 3px;"></i>        
+        <div>
+            All of the following data was generated from <a href="https://fred.stlouisfed.org/series/ASPUS" target="_blank">Federal Reserve Economic Date [FRED]</a> by parsing their free CSV files for US Historic Price Data of Real Estate from 1963 to 2023.
+        </div>
+      </div>
+      <p>Below is a chart I derived from the data to represent price growth since 1963:</p>
+      <img src="images/Real Estate Price over time.png"><br>
+    <ul>
+        <li style="margin-left: 10px !important; margin-right: 10px !important;" class="mt-4" id="re-time-model">
+            <span style="font-weight: bold; font-size: 20px;">Time Model</span><br>
+            <p>A time model is useful to model Real Estate Price because of the ever-growing population of humans compared to the finite amount of Earth's Crust.</p>
+            <p>There have been some numbers thrown around, such that real estate appreciates on average 3.2% each year. I used Python to parse and clean the data, and I used Google Sheets to find the average. I derived the value 2.9%.</p>
+            <p>Using an average growth rate of 2.9%, we can extrapolate price and create a chart that estimates Real Estate price to 2030:</p>
+            <img src="images/Estimated Growth over time-2.png"><br>
+            <p>This model puts the average price of Real Estate in 2030 somewhere around <span class="standout">$620,000</span>.</p>
+        </li>
+
+        <li style="margin-left: 10px !important; margin-right: 10px !important;" class="mt-4" id="re-lin-reg">
+            <span style="font-weight: bold; font-size: 20px;">Linear Regression Model</span><br>
+            <p>Linear regression is when you find a line of fit based on scattered points. Below is the code that I used to generate the Linear Regression:</p>
+            <div class="code-container">
+                <pre>
+                    <code class="language-python">
+import pandas as pd
+import matplotlib.pyplot as plt
+from scipy.stats import linregress
+
+# Read the CSV file
+df = pd.read_csv('real_estate.csv')
+df['Date'] = pd.to_datetime(df['Date'])
+
+# Convert 'Date' to numeric values (UNIX timestamp)
+df['Date'] = pd.to_numeric(df['Date'])
+
+# Extract x and y values
+x = df['Date']
+y = df['Price']
+
+# Perform linear regression
+slope, intercept, r, p, std_err = linregress(x, y)
+# Show the equation
+print(f"The equation y={slope}x+{intercept} has an r^2 value of {r}.")
+
+# Plot the scatter plot
+plt.scatter(x, y, label='Data')
+
+# Plot the regression line
+plt.plot(x, intercept + slope * x, 'r', label='Linear Regression')
+
+# Show the graph
+plt.legend()
+plt.show()
+                    </code>
+                </pre>
+            </div>
+            <p>The above code yeilds that following output: <span class="standout">The equation y=2.359175846746714e-13x+8546.37896436386 has an r^2 value of 0.9663313878706447.</span></p>
+            <img src="images/lin_reg_real_estate.png"><br>
+            <p class="mt-2">By adding the following code, we can create "zones" around our linear regression to see over and under extensions in our model:</p>
+            <div class="code-container">
+                <pre>
+                    <code class="language-python">
+...
+regression_line = intercept + slope * x
+margin = 15000
+upper_mean_bound = regression_line + margin
+lower_mean_bound = regression_line - margin
+margin = 15000*2
+upper_mean_plus_one_bound = regression_line + margin
+lower_mean_minus_one_bound = regression_line - margin
+margin = 15000*3
+upper_mean_plus_two_bound = regression_line + margin
+lower_mean_minus_two_bound = regression_line - margin
+plt.scatter(x, y, label='Data')
+# Plot the regression line
+plt.plot(x, regression_line, 'r', label='Linear Regression')
+# Shade the area between the upper and lower bounds
+plt.fill_between(x, lower_mean_bound, upper_mean_bound, color='red', alpha=0.7, label='Average Zone')
+plt.fill_between(x, lower_mean_minus_one_bound, upper_mean_plus_one_bound, color='blue', alpha=0.5, label='+ or - 1 Zone')
+plt.fill_between(x, lower_mean_minus_two_bound, upper_mean_plus_two_bound, color='yellow', alpha=0.3, label='+ or minus - 2 Zone')        
+...</code>
+                </pre>
+            </div>
+            <p>This will produce the following graph:</p>
+            <img src="images/real_estate_lin_reg_zones.png"><br>
+            <p class="mt-2">Notice how our zones nicely encapsulate majoirty of the chart except for the most recent spike in 2019? One can conclude from this that the market is over-extended, and we are due for a price correction soon.</p>
+            <p>We can also extrapolate data based on the graph we have just created. Below I show the code that allows us to extrapolate this to year 2050. Please note, I did slightly change the function from the previous section to be measured in days by indexing, rather than UNIX timestamps...</p>
+            <div class="code-container">
+                <pre>
+                    <code class="language-python">
+...
+import csv 
+import datetime
+huge_array = []
+def writeToCSVFile():
+    year = 2023
+    for i in range(251, 500, 4):
+        if year > 2052:
+            break
+        else:
+            new_array = []
+            price = 1964 * i - 53974
+            date_time = datetime.datetime(year, 7, 26, 21, 20)
+            new_array.append(date_time.strftime('%Y-%m-%d'))
+            print(f"In year {date_time.strftime('%Y-%m-%d')}, the price will be {price}")
+            new_array.append(price)
+            huge_array.append(new_array)
+            year += 1
+writeToCSVFile()
+
+with open("real_estate.csv", 'a') as fd:
+    writer = csv.writer(fd)
+    for i in huge_array:
+        writer.writerow(i)
+    fd.close()      
+...</code>
+                </pre>
+            </div>
+            <p class="mt-2">Results:</p>
+            <img src="images/real_estate_lin_reg_future.png"><br>
+            <p class="mt-2">As I said earlier, the market right now is very over-extended as we can see via the linear regression trendline. A price correction is due for, probably within the next 2 or 3 years. However, this model predicts the price of Real Estate in 2050 to have a high of <span class="standout">$700,000</span> and a low of <span class="standout">$540,000</span>.</p>
+        </li>
+
+    </ul>
 </section>
 
 <hr style="margin-top: 30px !important;">
@@ -342,7 +511,11 @@ with open("predicted.csv", 'a') as fd: # open the new CSV
 
 <section class="container" id="conclusions">
     <h2>Conclusion</h2>
-    <p>I still have yet to do this part.</p>
+    <p>It is clear from the models above that both Bitcoin and Real Estate seem be an appreciating asset. The choice to invest comes down to a few aspects, such as risk tolerance, investment strategies, long term vs. short term, diversification strategies, and available liquidity.</p>
+    <p>Based on the linear regression analysis on Real Estate, and the logramithic regression on Bitcoin, I think Real Estate is a much more safe bet. The reason being is because of predictability of price flucuations. The r^2 value for the Bitcoin analysis was something near 60%, while the Real Estate r^2 value was 96%. As an investor, I like the 96% because it offers me a safer return on investment. However, I am not discarding Bitcoin. I think a wise investor is one who diversifies him/herself to optimize their return on investment in different markets and niches.</p>
+    <p>Personally, I would expose about 20% of my portfolio to cryptocurrencies in general. It'd be an educated investment to make gains based on the cyclical trends cryptocurrencies seem to follow, but it wouldn't be enough to tremendously damage my portfolio if some unforseeable event occurs, such as discussed in <a href="#model-limitations">Bitcoin Price Model limitations</a>.</p>
+    <p>Overall, I'd continue to follow to 80/20 principle, where I invest 80% of my portfolio into safe assets, such as Real Estate, Mutual Funds, Bonds, and save the other 20% for more volitile assets, such as cryptocurrencies, NFTs, and option trading.</p>
+
 </section>
 
 <hr style="margin-top: 30px !important;">
@@ -356,6 +529,10 @@ with open("predicted.csv", 'a') as fd: # open the new CSV
         <li><a href="https://cointelegraph.com/learn/a-beginners-guide-to-the-bitcoin-stock-to-flow-model" target="_blank">A different stock to flow model</a></li>
         <li><a href="https://medium.com/@100trillionUSD/bitcoin-stock-to-flow-cross-asset-model-50d260feed12" target="_blank">PlanB's take on stock to flow models</a></li>
         <li><a href="https://www.blockchaincenter.net/en/history-of-the-rainbow-chart/" target="_blank">Logramithic Regression and the Bitcoin rainbow model</a></li>
+        <li><a href="https://www.investopedia.com/terms/r/realestate.asp" target="_blank">Real Estate 101</a></li>
+        <li><a href="https://corporatefinanceinstitute.com/resources/commercial-real-estate/real-estate/" target="_blank">Types of Real Estate</a></li>
+        <li><a href="https://www.vts.com/blog/the-6-types-of-commercial-real-estate-properties" target="_blank">Commercial Rest Estate</a></li>
+        <li><a href="https://www.experian.com/blogs/ask-experian/factors-that-affect-home-value/#:~:text=A%20home%27s%20value%20is%20affected,age%2C%20location%20and%20property%20size." target="_blank">Pricing Factors for Real Estate</a></li>
 
     </ul>
 </section>
